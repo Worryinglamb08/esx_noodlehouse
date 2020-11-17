@@ -169,14 +169,13 @@ end
 function OpenVaultMenu()
 
     local elements = {
-      {label = "Salade (x1) - 8$", value = 'salade'},
-      {label = "Tomate (x1) - 8$", value = 'tomate'},
-      {label = "Fromage (x1) - 20$", value = 'fromage'},
+      {label = "Tomate (x1) - 2$", value = 'tomate'},
+      {label = "Fromage (x1) - 2$", value = 'fromage'},
       {label = "Bouillon Boeuf (x1) - 2$", value = 'bouillonboeuf'},
       {label = "Ramen Surgelé (x1) - 5$", value = 'ramensurgele'},
       {label = "Soba Surgelé (x1) - 4$", value = 'sobasurgele'},
-      {label = "Oeuf (x1) - 3$", value = 'oeuf'},
-      {label = "Rondelle Porc (x1) - 1.5$", value = 'rondelleporc'},
+      {label = "Oeuf (x1) - 1$", value = 'oeuf'},
+      {label = "Rondelle Porc (x1) - 2$", value = 'rondelleporc'},
       {label = "Sake (x1) - 3$", value = 'sake'},
       {label = "Thé (x1) - 2$", value = 'the'},
       {label = "Bouillon Poisson (x1)- 3$", value = 'bouillonpoisson'}
@@ -198,17 +197,13 @@ function OpenVaultMenu()
     if data.current.value == "the" then
 			valor = 2
 		end
-
-		if data.current.value == "salade" then
-			valor = 8
-		end
 		
 		if data.current.value == "tomate" then
-			valor = 8
+			valor = 2
 		end
 		
 		if data.current.value == "fromage" then
-			valor = 20
+			valor = 2
 		end
 		
 		if data.current.value == "bouillonboeuf" then
@@ -224,7 +219,7 @@ function OpenVaultMenu()
 		end
 		
 		if data.current.value == "oeuf" then
-			valor = 3
+			valor = 1
 		end
 		
 		if data.current.value == "bouillonpoisson" then
@@ -232,7 +227,7 @@ function OpenVaultMenu()
     end
     
     if data.current.value == "rondelleporc" then
-			valor = 1.5
+			valor = 2
     end
     
     if data.current.value == "sake" then
